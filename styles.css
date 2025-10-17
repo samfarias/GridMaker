@@ -1,0 +1,92 @@
+/* Index & Grid Pages CSS Styling */
+
+/* Table Style */
+tr,td{
+    border:1px;
+    border-style: solid;
+}
+td{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+/*  Set up the body background image and base font */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Base font style for the page */
+    /* Set a full-screen background image that stays fixed during scroll */
+    background: url('Grid.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    color: #333; /* Default text color */
+}
+
+/*  Style the header section at the top of the page */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for contrast */
+    padding: 40px 20px; /* Space around the header content */
+    color: #fff; /* White text for readability against the dark background */
+    text-align: center; /* Center the header text */
+}
+
+/* Improve the main title's appearance */
+header h1 {
+    font-size: 3em; /* Large font size for the title */
+    margin: 0; /* Remove default margins */
+    /* Add a subtle shadow to improve text readability over the background image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Applies to each content section on the homepage */
+section {
+    margin: 40px auto; /* Center the section horizontally with top and bottom margins */
+    width: 90%; /* Take up 90% of the viewport width */
+    max-width: 800px; /* Limit the section width for better readability */
+    /* Use a semi-transparent white background to allow some of the background image to show through */
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px; /* Internal spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center the text inside sections */
+}
+
+/* Team Members List: Remove default list styling */
+section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* Team Members List Items: Style each team member's name */
+section ul li {
+    font-size: 1.2em; /* Increase font size for better legibility */
+    margin: 10px 0; /* Space between list items */
+    padding: 10px; /* Internal padding for each list item */
+    background-color: #f9f9f9; /* Light background color for list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for team list items: Change background color on hover */
+section ul li:hover {
+    background-color: #e0e0e0; /* Darken background on hover for visual feedback */
+}
+
+/* Grid Link Button: Style the link as a prominent call-to-action button */
+.grid-link {
+    display: inline-block; /* Allows padding and margins to be applied like a block element */
+    margin-top: 20px; /* Space above the button */
+    padding: 15px 30px; /* Button padding for size and clickability */
+    background-color: #ff6600; /* Bright, eye-catching button color */
+    color: #fff; /* White text for contrast */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 1.5em; /* Increase font size for emphasis */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the grid link: Scale up and change background color */
+.grid-link:hover {
+    background-color: #e65c00; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Scale up the button slightly for a dynamic effect */
+}
